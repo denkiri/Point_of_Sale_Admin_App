@@ -1,0 +1,2 @@
+# Point_of_Sale_Admin_App
+POS Admin App is an administrative management system for different categories of products associated with a retail store's daily sales. This application helps the administrator to feed in products to the system and also generate reports based on the products sold from the Cashier's Point of sale App. This point of sale system provides you with a great replacement for a cash register and tracks sales and inventory in real-time. It enables you the mobility to sell anywhere and in any way, your customers want to buy.
