@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:elevation="14dp"
+    app:cardCornerRadius="8dp"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+
+        >
+        <TextView
+            android:id="@+id/dateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/date"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:text="Expired Date:"
+            android:textStyle="bold"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/purple_500"
+            android:layout_toStartOf="@id/date"
+            />
+        <TextView
+            android:id="@+id/date"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:text="23/08/2021"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/purple_500"  />
+        <TextView
+            android:id="@+id/code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dateText"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:gravity="left"
+            android:text="P-234568"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dateText"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:maxLength="30"
+            android:padding="5dp"
+            android:gravity="center"
+            android:text="Tablet"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorCost" />
+
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/code"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="COSMOS"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/des"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/productName"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:text="Description:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productName"
+            android:gravity="right"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:layout_toRightOf="@id/des"
+            android:text="Pain Killer"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/black"  />
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/des"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:text="Total Amount Lose:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorCost" />
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_below="@id/des"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/total"
+            android:text="90"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorCost"  />
+
+        <TextView
+            android:id="@+id/cost"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/total"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:text="Cost:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/costValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/total"
+            android:gravity="right"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/cost"
+            android:text="15"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/black"  />
+        <TextView
+            android:id="@+id/qty"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/cost"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:text="Total Quantity Lose:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorCost" />
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_below="@id/cost"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/total"
+            android:text="90"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorCost"  />
+
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

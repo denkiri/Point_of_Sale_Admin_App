@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+  android:layout_margin="4dp"
+    android:elevation="14dp"
+    app:cardCornerRadius="8dp"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+
+        >
+        <TextView
+            android:id="@+id/invoiceNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="left"
+            android:textSize="12sp"
+            android:text="RS-234568"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/dueDate"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:text="Due Date:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/purple_500" />
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:layout_toRightOf="@id/dueDate"
+            android:text="23/01/2021"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/purple_500"  />
+        <TextView
+            android:id="@+id/date2"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/invoiceNumber"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:text="Date:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/date3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/invoiceNumber"
+            android:gravity="right"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/date2"
+            android:text="23/12/2020"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/black"  />
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/date2"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:text="Name:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/customerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date2"
+            android:gravity="right"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:layout_marginLeft="60dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/name"
+            android:text="Dennis Kirimi Gitonga"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/black"
+            android:layout_marginStart="60dp" />
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:text="Amount Paid:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorAccent" />
+        <TextView
+            android:id="@+id/amountPaid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:gravity="right"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/amount"
+            android:text="50"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorAccent"  />
+        <TextView
+            android:id="@+id/bal"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/amount"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:text="Balance:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorCost" />
+        <TextView
+            android:id="@+id/balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/amount"
+            android:gravity="right"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/bal"
+            android:text="50"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorCost"  />
+        <TextView
+            android:id="@+id/remark"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/bal"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:text="Remarks:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/remarks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bal"
+            android:gravity="right"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:layout_toRightOf="@id/bal"
+            android:text="Incomplete"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/black"  />
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

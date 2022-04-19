@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    android:elevation="14dp"
+    app:cardCornerRadius="8dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+
+        >
+        <TextView
+            android:id="@+id/code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:gravity="left"
+            android:text="P-234568"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:maxLength="30"
+            android:text="Tablet"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorCost" />
+        <TextView
+            android:id="@+id/invoiceNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:gravity="right"
+            android:text="RS-234907"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/black"  />
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/code"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:text="COSMOS"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/des"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/productName"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:text="Description:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productName"
+            android:gravity="right"
+            android:layout_marginLeft="60dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:layout_toRightOf="@id/des"
+            android:text="Pain Killer"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/black"
+            android:layout_marginStart="60dp" />
+        <TextView
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/des"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:text="Quantity Start:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/quantityStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_below="@id/des"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/start"
+            android:text="90"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/black"  />
+
+        <TextView
+            android:id="@+id/sold"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/start"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:text="Quantity Sold:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorCost" />
+        <TextView
+            android:id="@+id/quantitySold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_below="@id/start"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/sold"
+            android:text="15"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorCost"  />
+
+        <TextView
+            android:id="@+id/end"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/sold"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:text="Quantity End:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorAccent" />
+        <TextView
+            android:id="@+id/quantityEnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_below="@id/sold"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/end"
+            android:text="75"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorAccent"  />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/end"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="Price"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorAccent" />
+        <TextView
+            android:id="@+id/priceValue"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/end"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/price"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:text="350 Kshs"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorAccent"
+            android:layout_toEndOf="@id/price" />
+        <TextView
+            android:id="@+id/cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/end"
+            android:layout_toLeftOf="@+id/costValue"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:text="Cost"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorCost"
+            />
+        <TextView
+            android:id="@+id/costValue"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/end"
+            android:gravity="right"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="250 Kshs"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorCost"/>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

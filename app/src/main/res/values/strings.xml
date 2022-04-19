@@ -1,0 +1,192 @@
+<resources>
+    <string name="app_name">Pos-Admin</string>
+    <string name="cart">Cart</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title"> PHARMACY Pos-Admin </string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_settings">Settings</string>
+    <string name="copyRight">2021. DELE TECH. ALL RIGHTS RESERVED</string>
+    <string name="intro">Pos-Admin</string>
+    <string name="rights">Developed by Dele Tech</string>
+    <string name="forgot"><u>Forgot Password?</u></string>
+    <string name="no_connection">No Internet Connection,Check Your connection or try again</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_pos">Pos-Admin</string>
+    <string name="menu_product">Products</string>
+    <string name="menu_category">Categories</string>
+    <string name="menu_customer">Customers</string>
+    <string name="add_customer">Add Customers</string>
+    <string name="add_payment">Add Payment</string>
+    <string name="edit_customer">Edit Customer</string>
+    <string name="menu_order">Purchase Order List</string>
+    <string name="menu_orderForm">Purchase Order Form</string>
+    <string name="menu_supplier">Supplier</string>
+    <string name="menu_ledger">Ledger</string>
+    <string name="menu_report">Reports</string>
+    <string name="menu_account">Account</string>
+    <string name="menu_dayReport">Day Sales Report</string>
+    <string name="menu_accounts">Accounts Receivable</string>
+    <string name="menu_collection">Collection Report</string>
+    <string name="menu_sales">Sales Report</string>
+    <string name="menu_cash">Cash Sales</string>
+    <string name="menu_credit">Credit Sales</string>
+    <string name="menu_mpesa">Mpesa Sales</string>
+    <string name="menu_inventory">Inventory Report</string>
+    <string name="menu_expired">List of Products Expired</string>
+    <string name="menu_returned">Report of Returned Products</string>
+    <string name="menu_transaction">Customer Transaction Record</string>
+    <string name="menu_users">Users</string>
+    <string name="today_sales"> sales</string>
+    <string name="menu_profile">Profile</string>
+    <string name="add_category">Add Category</string>
+    <string name="edit_category">Edit Category</string>
+    <string name="ksh">KSH</string>
+    <string name="select_category">Category:</string>
+    <string name="select_brand">Brand</string>
+    <string name="select_supplier">Supplier:</string>
+    <string name="add_supplier">Add Supplier</string>
+    <string name="edit_supplier">Edit Supplier</string>
+    <string name="add_product">Add Product</string>
+    <string name="edit_product">Edit Product</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="selected_unit">Selected unit:</string>
+    <string name="morning_text">Good Morning</string>
+    <string name="afternoon_text">Good Afternoon</string>
+    <string name="evening_text">Good Evening</string>
+    <string name="graphs_charts"><![CDATA[Graphs & Charts]]></string>
+    <string name="sales_statistics_by_payment_method">Sales Statistics by Payment Method</string>
+    <string name="monthly_sales_graph">Monthly Sales Graph</string>
+    <string name="yearly_sales_graph">Yearly Sales Graph</string>
+    <string name="chart_for_loses">Chart for Loses</string>
+    <string name="removed_items_will_be_calculated_as_lose">Removed Items will be calculated as lose!</string>
+    <string name="total_vat">Total Vat</string>
+    <string name="try_again">Try Again</string>
+    <string name="deactivate">Deactivate</string>
+    <string name="activate">Activate</string>
+    <string name="vat">VAT</string>
+    <string name="denniskirimi_dk_gmail_com">denniskirimi.dk@gmail.com</string>
+    <string name="add_user">ADD USER</string>
+    <string name="edit_user">Edit User</string>
+    <string name="cashier_list">Cashier List</string>
+    <string name="total_suppliers">Total Suppliers:</string>
+    <string name="total_transactions">Total Transactions</string>
+    <string name="sit_back_amp_relax_while_we_verify_your_mobile_number"><![CDATA[Sit back & Relax! while we verify your mobile number]]></string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="swipe_down_to_refresh">Click to Refresh</string>
+    <string name="verify">Verify</string>
+    <string name="about_pos_mobile">About POS-ADMIN</string>
+    <string name="current_version">Current Version:</string>
+    <string name="value_add_tax">VAT%:</string>
+    <string name="_1_0">1.0</string>
+    <string name="app_description">It is an administrative management software system for different categories of products associated with a shops daily sales This application helps the administrator to feed in products to the system and also generate reports based on the product sold from the cashiers point of sales system.</string>
+    <string name="about_mobile_pos">About POS-ADMIN</string>
+    <string name="call_whatsapp">Call/Whatsapp:</string>
+    <string name="_254_0700107838">(+254)0700107838</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="deletech_ke_gmail_com">denniskirimi.dk@gmail.com</string>
+    <string name="dele_gmail_com">demo.@gmail.com</string>
+    <string name="guest2020">guest2020</string>
+    <string name="subscription_fee">Monthly Subscription Fee</string>
+    <string name="_0">0</string>
+    <string name="purchase_order_list">Purchase Order List</string>
+    <string name="purchase_order_form">Purchase Order Form</string>
+    <string name="supplier">Supplier:</string>
+    <string name="quantity_left">Quantity Left</string>
+    <string name="_1">1</string>
+    <string name="discount">Discount:</string>
+    <string name="number_of_items">Quantity:</string>
+    <string name="add_to_receipt">Add To Invoice</string>
+    <string name="save_invoice">Save Invoice</string>
+    <string name="_0ksh">0Ksh</string>
+    <string name="product">product</string>
+    <string name="cost">Cost</string>
+    <string name="price">Price</string>
+    <string-array name="units">
+        <item>Per Pieces</item>
+        <item>Per Box</item>
+        <item>Per Tablet</item>
+        <item>Per Pack</item>
+        <item>Per Bottle</item>
+        <item>Per Sachet</item>
+        <item>Per Kit</item>
+        <item>Per Item</item>
+        <item>Per Kg</item>
+        <item>Per Meter</item>
+        <item>Per Roll</item>
+        <item>Per Litre</item>
+        <item>Per Bag</item>
+    </string-array>
+    <string-array name="electronic">
+        <item>Per Roll</item>
+        <item>Per Pieces</item>
+        <item>Per Box</item>
+        <item>Per Meter</item>
+        <item>Per Pack</item>
+        <item>Per Kg</item>
+        <item>Per Bottle</item>
+        <item>Per Sachet</item>
+        <item>Per Kit</item>
+        <item>Per Item</item>
+    </string-array>
+    <string-array name="pharmacy">
+        <item>Per Pieces</item>
+        <item>Per Box</item>
+        <item>Per Tablet</item>
+        <item>Per Pack</item>
+        <item>Per Bottle</item>
+        <item>Per Sachet</item>
+        <item>Per Kit</item>
+        <item>Per Item</item>
+    </string-array>
+    <string-array name="hardware">
+        <item>Per Pieces</item>
+        <item>Per Box</item>
+        <item>Per Roll</item>
+        <item>Per Pack</item>
+        <item>Per Kg</item>
+        <item>Per Bag</item>
+        <item>Per Bottle</item>
+        <item>Per Sachet</item>
+        <item>Per Kit</item>
+        <item>Per Item</item>
+    </string-array>
+    <string-array name="agrovet">
+        <item>Per Pieces</item>
+        <item>Per Box</item>
+        <item>Per Roll</item>
+        <item>Per Pack</item>
+        <item>Per Bag</item>
+        <item>Per Bottle</item>
+        <item>Per Sachet</item>
+        <item>Per Kit</item>
+        <item>Per Item</item>
+    </string-array>
+    <string-array name="general_shop">
+        <item>Per Pieces</item>
+        <item>Per Box</item>
+        <item>Per Roll</item>
+        <item>Per Pack</item>
+        <item>Per Meter</item>
+        <item>Per Bag</item>
+        <item>Per Kg</item>
+        <item>Per Bottle</item>
+        <item>Per Sachet</item>
+        <item>Per Kit</item>
+        <item>Per Item</item>
+    </string-array>
+    <string name="save_receipt">Save Invoice</string>
+    <string name="save">Saving Invoice,Please wait!</string>
+    <string name="invoice_no">Invoice No:</string>
+    <string name="complete">Complete</string>
+    <string name="pending">Pending</string>
+    <string name="date_issued">Date issued</string>
+    <string name="supplier_invoices_list">Supplier Invoices List</string>
+    <string name="suppliers_invoices_list">Suppliers Invoices List</string>
+    <string name="add_products_to_invoice">Add Products to Invoice</string>
+    <string name="record_invoice">Record Invoice</string>
+</resources>

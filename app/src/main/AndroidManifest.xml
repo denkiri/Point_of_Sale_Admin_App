@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.denkiri.pharmacy">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Pharmacy">
+        <activity
+            android:name=".ui.main.ExpenseIncomeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Pharmacy.NoActionBar"
+            />
+        <activity
+            android:name=".ExpenseActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Pharmacy.NoActionBar" />
+        <activity
+            android:name=".ui.supplier.InvoiceActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Pharmacy.NoActionBar" />
+        <activity
+            android:name=".ui.supplier.PurchaseOrderActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Pharmacy.NoActionBar" />
+        <activity
+            android:name=".AboutActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Pharmacy.NoActionBar" />
+        <activity
+            android:name=".SubscriptionActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Pharmacy.NoActionBar" />
+        <activity android:name=".ui.auth.ui.login.VerifyPhoneActivity" />
+        <activity
+            android:name=".AcountsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Pharmacy.NoActionBar" />
+        <activity
+            android:name=".ui.receipt.ReceiptActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Pharmacy.NoActionBar" />
+        <activity
+            android:name=".ChartActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Pharmacy.NoActionBar" />
+        <activity
+            android:name=".CustomerActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Pharmacy.NoActionBar" />
+        <activity
+            android:name=".CollectionActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Pharmacy.NoActionBar" />
+        <activity
+            android:name=".ReceivableActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Pharmacy.NoActionBar" />
+        <activity
+            android:name=".ExpiryActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Pharmacy.NoActionBar" />
+        <activity
+            android:name=".InventoryActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Pharmacy.NoActionBar" />
+        <activity
+            android:name=".DaySalesActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Pharmacy.NoActionBar" />
+        <activity
+            android:name=".SalesActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Pharmacy.NoActionBar" />
+        <activity
+            android:name=".ui.supplier.SupplierActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Pharmacy.NoActionBar" />
+        <activity
+            android:name=".ui.categories.CategoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Pharmacy.NoActionBar" />
+        <activity
+            android:name=".ui.auth.AuthActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Pharmacy.NoActionBar" />
+        <activity
+            android:name=".Splashscreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Pharmacy.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Pharmacy.NoActionBar" />
+
+        <receiver
+            android:name=".utils.ConnectivityReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".utils.MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".utils.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

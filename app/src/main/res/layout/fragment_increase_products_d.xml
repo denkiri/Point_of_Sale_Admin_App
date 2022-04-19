@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.brand.IncreaseProductsFragmentD">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:id="@+id/navigation"
+            android:background="@color/colorPrimary"
+
+            android:layout_alignParentLeft="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:text="Increase Stock"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/white" />
+            <ImageView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/back"
+                android:src="@drawable/ic_arrow_back_white_24dp"
+                android:padding="10dp"
+                android:backgroundTint="@color/white"
+                />
+        </RelativeLayout>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/navigation"
+            >
+            <RelativeLayout
+                android:id="@+id/main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/main2"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:theme="@style/TextLabel"
+                            style="@style/TextLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:textColorHint="@android:color/black"
+                            app:endIconMode="custom"
+                            app:endIconTint="@android:color/black"
+                            app:endIconTintMode="src_atop">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/productName"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="10dp"
+                                android:hint="Product Name"
+                                android:inputType="text"
+                                android:textColor="@android:color/black"
+                                android:textColorHint="@android:color/black" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:theme="@style/TextLabel"
+                            style="@style/TextLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:textColorHint="@android:color/black"
+                            app:endIconMode="custom"
+                            app:endIconTint="@android:color/black"
+                            app:endIconTintMode="src_atop">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/cost"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="10dp"
+                                android:maxLength="8"
+                                android:hint="Unit Cost(KSH)"
+                                android:inputType="numberDecimal"
+                                android:textColor="@android:color/black"
+                                android:textColorHint="@android:color/black" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:theme="@style/TextLabel"
+                            style="@style/TextLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:textColorHint="@android:color/black"
+                            app:endIconMode="custom"
+                            app:endIconTint="@android:color/black"
+                            app:endIconTintMode="src_atop">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/price"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="10dp"
+                                android:maxLength="8"
+                                android:hint="Unit Price(KSH"
+                                android:inputType="numberDecimal"
+                                android:textColor="@android:color/black"
+                                android:textColorHint="@android:color/black" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:theme="@style/TextLabel"
+                            style="@style/TextLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:textColorHint="@android:color/black"
+                            app:endIconMode="custom"
+                            app:endIconTint="@android:color/black"
+                            app:endIconTintMode="src_atop">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/qty"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="10dp"
+                                android:hint="Quantity"
+                                android:maxLength="8"
+                                android:text="0"
+                                android:inputType="number"
+                                android:textColor="@android:color/black"
+                                android:textColorHint="@android:color/black" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:textColor="@color/black"
+                            android:text="Expiry Date"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                            />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            >
+                            <TextView
+                                android:id="@+id/tvDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:text="00-00-0000" />
+                            <Button
+                                android:id="@+id/btSelectDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Select Date"/>
+                        </LinearLayout>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/increaseProduct"
+                            android:padding="10dp"
+                            android:layout_marginBottom="60dp"
+                            android:text="Increase Stock"
+                            android:gravity="center"
+                            style="@style/Widget.MaterialComponents.Button.TextButton"
+                            android:layout_gravity="end"
+                            android:textAppearance="@style/Widget.MaterialComponents.Button.TextButton"
+                            android:textColor="@color/white"
+                            android:textSize="16.5sp"
+                            android:textStyle="bold"
+                            android:backgroundTint="@color/colorAccent"
+                            app:cornerRadius="5dp"
+                            app:rippleColor="@color/colorPrimary"
+
+                            />
+
+                    </LinearLayout>
+
+
+
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+        <ProgressBar
+            android:id="@+id/avi"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:padding="12dp"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/empty_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:visibility="gone">
+            <ImageView
+                android:id="@+id/empty_icon"
+                android:visibility="invisible"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/ic_baseline_signal_wifi_off_24" />
+
+            <TextView
+                android:id="@+id/empty_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/empty_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="28dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="Oops,something went wrong. Please try again Later" />
+
+            <Button
+                android:id="@+id/empty_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="28dp"
+                android:foreground="?selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/try_again" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>

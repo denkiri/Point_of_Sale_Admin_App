@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "811139902781",
+    "project_id": "x-landing-285012",
+    "storage_bucket": "x-landing-285012.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:811139902781:android:da22380ea6e12ceb206954",
+        "android_client_info": {
+          "package_name": "com.denkiri.pharmacy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "811139902781-8vvbjde92cgbrgum3svaht0mudh22995.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.denkiri.pharmacy",
+            "certificate_hash": "26a822cbc9c6acc26ced1096a6c40a7eef3b2f91"
+          }
+        },
+        {
+          "client_id": "811139902781-snr1fqblngk8rjldpqp2uu9n72khqffq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.denkiri.pharmacy",
+            "certificate_hash": "c0cf59055a45b028c896cabe2cb613ce09caacc2"
+          }
+        },
+        {
+          "client_id": "811139902781-nat0lk9gfu2eb4okadrnmar8k8gtoi7n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-E8KzL3OkHm4CSfqmTyp0QyySJuPMk6E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "811139902781-nat0lk9gfu2eb4okadrnmar8k8gtoi7n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

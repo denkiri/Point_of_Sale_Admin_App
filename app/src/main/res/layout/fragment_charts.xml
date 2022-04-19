@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="50dp"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".ui.charts.ChartsFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_categoryStat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:elevation="10dp"
+        app:shapeAppearance="@color/white"
+        app:cardUseCompatPadding="true"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="8dp"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <com.denkiri.pharmacy.utils.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/categoryImg"
+            android:padding="5dp"
+            app:civ_border_color="@color/colorCost"
+            app:civ_border_overlay="true"
+            app:civ_border_width="1dp"
+            app:civ_fill_color="@color/colorCost"
+            android:src="@drawable/ic_baseline_category_24"/>
+        <TextView
+            android:id="@+id/categoryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:padding="5dp"
+            android:text="Sales Statistics by Category"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/black" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:id="@+id/next"
+            android:padding="5dp"
+            android:src="@drawable/ic_baseline_navigate_next_24"/>
+
+
+
+    </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_brandStat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:elevation="10dp"
+            app:shapeAppearance="@color/white"
+            app:cardUseCompatPadding="true"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="8dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+                <com.denkiri.pharmacy.utils.CircleImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/brandImg"
+                    android:padding="5dp"
+                    app:civ_border_color="@color/colorCost"
+                    app:civ_border_overlay="true"
+                    app:civ_border_width="1dp"
+                    app:civ_fill_color="@color/colorCost"
+                    android:src="@drawable/ic_baseline_branding_watermark_24"/>
+                <TextView
+                    android:id="@+id/brandText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:padding="5dp"
+                    android:text="Sales Statistics by Brand"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="@color/black" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="right"
+                    android:id="@+id/next7"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_baseline_navigate_next_24"/>
+
+
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_paymentStat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:elevation="10dp"
+            app:shapeAppearance="@color/white"
+            app:cardUseCompatPadding="true"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="8dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+                <com.denkiri.pharmacy.utils.CircleImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/payment"
+                    android:padding="5dp"
+                    app:civ_border_color="@color/colorCost"
+                    app:civ_border_overlay="true"
+                    app:civ_border_width="1dp"
+                    app:civ_fill_color="@color/colorCost"
+                    android:src="@drawable/ic_baseline_payments_24"/>
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:padding="5dp"
+                    android:text="@string/sales_statistics_by_payment_method"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="@color/black" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="right"
+                    android:id="@+id/next2"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_baseline_navigate_next_24"/>
+
+
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_monthlyStat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:elevation="10dp"
+            app:shapeAppearance="@color/white"
+            app:cardUseCompatPadding="true"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="8dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+                <com.denkiri.pharmacy.utils.CircleImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/monthImg"
+                    android:padding="5dp"
+                    app:civ_border_color="@color/colorCost"
+                    app:civ_border_overlay="true"
+                    app:civ_border_width="1dp"
+                    app:civ_fill_color="@color/colorCost"
+                    android:src="@drawable/totsales"/>
+                <TextView
+                    android:id="@+id/monthText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:padding="5dp"
+                    android:text="@string/monthly_sales_graph"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="@color/black" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="right"
+                    android:id="@+id/next3"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_baseline_navigate_next_24"/>
+
+
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_yearlyStat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:elevation="10dp"
+            app:shapeAppearance="@color/white"
+            app:cardUseCompatPadding="true"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="8dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+                <com.denkiri.pharmacy.utils.CircleImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/yearImg"
+                    android:padding="5dp"
+                    app:civ_border_color="@color/colorCost"
+                    app:civ_border_overlay="true"
+                    app:civ_border_width="1dp"
+                    app:civ_fill_color="@color/colorCost"
+                    android:src="@drawable/annual_report"/>
+                <TextView
+                    android:id="@+id/yearText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:padding="5dp"
+                    android:text="@string/yearly_sales_graph"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="@color/black" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="right"
+                    android:id="@+id/next4"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_baseline_navigate_next_24"/>
+
+
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_loseStat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:elevation="10dp"
+            app:shapeAppearance="@color/white"
+            app:cardUseCompatPadding="true"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="8dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+                <com.denkiri.pharmacy.utils.CircleImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/loseImg"
+                    android:padding="5dp"
+                    app:civ_border_color="@color/colorCost"
+                    app:civ_border_overlay="true"
+                    app:civ_border_width="1dp"
+                    app:civ_fill_color="@color/colorCost"
+                    android:src="@drawable/lose"/>
+                <TextView
+                    android:id="@+id/loseText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:padding="5dp"
+                    android:text="@string/chart_for_loses"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="@color/black" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="right"
+                    android:id="@+id/next5"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_baseline_navigate_next_24"/>
+
+
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_vat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:elevation="10dp"
+            app:shapeAppearance="@color/white"
+            app:cardUseCompatPadding="true"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="8dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+                <com.denkiri.pharmacy.utils.CircleImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/vatImg"
+                    android:padding="5dp"
+                    app:civ_border_color="@color/colorCost"
+                    app:civ_border_overlay="true"
+                    app:civ_border_width="1dp"
+                    app:civ_fill_color="@color/colorCost"
+                    android:src="@drawable/vat"/>
+                <TextView
+                    android:id="@+id/vatText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:padding="5dp"
+                    android:text="@string/vat"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="@color/black" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="right"
+                    android:id="@+id/next6"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_baseline_navigate_next_24"/>
+
+
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+</FrameLayout>

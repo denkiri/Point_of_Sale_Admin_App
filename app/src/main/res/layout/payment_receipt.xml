@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:elevation="14dp"
+    app:cardCornerRadius="8dp"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+        <TextView
+            android:id="@+id/business"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_toStartOf="@+id/businessCode"
+            android:text="Business Code:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorCost" />
+        <TextView
+            android:id="@+id/businessCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="12sp"
+
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:text="C-27433250"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorCost" />
+        <TextView
+            android:id="@+id/invoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/businessCode"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:text="Invoice#:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/invoiceNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/businessCode"
+            android:layout_toRightOf="@+id/invoice"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:text="RS-234568"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/transactionDate"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/businessCode"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:layout_toLeftOf="@+id/date"
+            android:text="Date:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@android:color/black" />
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/businessCode"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:text="23/01/2021"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@android:color/black"  />
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/invoiceNumber"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:text="Amount:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/amountValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/invoiceNumber"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/amount"
+            android:text="0KSH"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/code"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/amount"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:text="Mpesa Code:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorAccent"
+            />
+        <TextView
+            android:id="@+id/codeValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/amount"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/code"
+            android:text="AMND46HJK"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorAccent"  />
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/date"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_toLeftOf="@id/phoneValue"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:text="Mobile:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorCost" />
+        <TextView
+            android:id="@+id/phoneValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date"
+            android:padding="5dp"
+            android:layout_alignParentRight="true"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:text="254700198838"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorCost"  />
+
+        <TextView
+            android:id="@+id/detailsValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="50"
+            android:layout_below="@id/phone"
+            android:padding="5dp"
+            android:layout_alignParentEnd="true"
+            android:textSize="12sp"
+            android:text="Payment Not Recieved Request cancelled by user"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/black"  />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/receipt"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="right"
+            android:backgroundTint="@color/purple_500"
+            android:text="Complete Payment"
+            android:layout_below="@id/code"
+            android:textAppearance="@style/Widget.MaterialComponents.Button.TextButton"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:cornerRadius="5dp"
+            app:rippleColor="@color/colorPrimary"
+
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
